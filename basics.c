@@ -1,9 +1,14 @@
+// Simple comments start like this
+
+// Header files
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()\
+int main()
 { 
-    printf("hello\n");
+    // Print 'hello there'
+    printf("hello there\n");
 
+    return 0;
 }
 
