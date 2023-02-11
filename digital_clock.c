@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -22,6 +23,18 @@ int main()
 
     printf("Seconds value =");     // DEBUG
     printf("%d\n", seconds);           // DEBUG
+
+
+// Show time
+    system("clear");
+    printf("Clock:\n");
+    printf("%2d:%2d:%2d\n", hours, minutes, seconds);
+
+
+
+
+
+// Update time forever
 
 
     return 0;
