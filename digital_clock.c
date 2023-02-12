@@ -31,7 +31,7 @@ int main()
     {
         system("clear");
         printf("Clock:\n");
-        printf("%2d:%2d:%2d\n", hours, minutes, seconds);
+        printf("%02d:%02d:%02d\n", hours, minutes, seconds);
         sleep(1);
         seconds++;     // increment counters
     }
