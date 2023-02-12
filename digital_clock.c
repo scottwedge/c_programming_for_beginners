@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main()
 {
@@ -31,6 +32,8 @@ int main()
     printf("%2d:%2d:%2d\n", hours, minutes, seconds);
 
 
+// update time by one second
+    sleep(1);
 
 
 
