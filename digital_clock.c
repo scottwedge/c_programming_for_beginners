@@ -26,15 +26,15 @@ int main()
     printf("%d\n", seconds);           // DEBUG
 
 
-// Show time
-    system("clear");
-    printf("Clock:\n");
-    printf("%2d:%2d:%2d\n", hours, minutes, seconds);
 
-
-// update time by one second
-    sleep(1);
-
+    while (1)
+    {
+        system("clear");
+        printf("Clock:\n");
+        printf("%2d:%2d:%2d\n", hours, minutes, seconds);
+        sleep(1);
+        seconds++;     // increment counters
+    }
 
 
 // Update time forever
