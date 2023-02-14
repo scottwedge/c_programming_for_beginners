@@ -34,6 +34,20 @@ int main()
         printf("%02d:%02d:%02d\n", hours, minutes, seconds);
         sleep(1);
         seconds++;     // increment counters
+        if (seconds >= 60)
+            {
+            seconds = 0;
+            minutes = minutes + 1;
+            }
+        if (minutes >= 60)
+            {
+            minutes = 0;
+            hours = hours + 1;
+            }
+        if (hours >= 24)
+            {
+            hours = 0;
+            }
     }
 
 
