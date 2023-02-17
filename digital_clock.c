@@ -23,16 +23,16 @@ int main()
         printf("Clock:\n");
         printf("%02d:%02d:%02d\n", hours, minutes, seconds);
         sleep(1);
-        seconds++;     // increment counters
+        seconds++;           // increment seconds counters
         if (seconds >= 60)
             {
             seconds = 0;
-            minutes = minutes + 1;
+            minutes++;     // increment minutes counter
             }
         if (minutes >= 60)
             {
             minutes = 0;
-            hours = hours + 1;
+            hours++;       // increment hours counter using '++'
             }
         if (hours >= 24)
             {
