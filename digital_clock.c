@@ -4,7 +4,9 @@
 
 int main()
 {
-    int seconds, minutes, hours;
+    int seconds, minutes, hours, days;
+
+    days = 0;   // initialize days value to zero
 
     printf("Enter value in hours:");  // Prompt for Hours value
     scanf("%d", &hours);
@@ -21,7 +23,7 @@ int main()
     {
         system("clear");
         printf("Clock:\n");
-        printf("%02d:%02d:%02d\n", hours, minutes, seconds);
+        printf("days:%02d  %02d:%02d:%02d\n", days, hours, minutes, seconds);
         sleep(1);
         seconds++;           // increment seconds counters
         if (seconds >= 60)
@@ -37,6 +39,7 @@ int main()
         if (hours >= 24)
             {
             hours = 0;
+            days++;
             }
     }
 
