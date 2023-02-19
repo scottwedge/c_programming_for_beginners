@@ -2,14 +2,21 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+int get_hours()
+{
+    int h;
+    printf("Enter value in hours:");  // Prompt for Hours value
+    scanf("%d", &h);
+    return h;
+}
+
 int main()
 {
     int seconds, minutes, hours, days;
 
     days = 0;   // initialize days value to zero
 
-    printf("Enter value in hours:");  // Prompt for Hours value
-    scanf("%d", &hours);
+    hours = get_hours();
 
     printf("Enter value in minutes:");  // Prompt for minutes value
     scanf("%d", &minutes);
