@@ -10,6 +10,15 @@ int get_hours()
     return h;
 }
 
+int get_minutes()
+{
+    int m;
+    printf("Enter value in minutes:");  // Prompt for minutes value
+    scanf("%d", &m);
+    return m;
+}
+
+
 int main()
 {
     int seconds, minutes, hours, days;
@@ -18,9 +27,7 @@ int main()
 
     hours = get_hours();
 
-    printf("Enter value in minutes:");  // Prompt for minutes value
-    scanf("%d", &minutes);
-
+    minutes = get_minutes();
 
     printf("Enter seconds value:");  // Prompt for time in seconds
     scanf("%d", &seconds);           // Read value
