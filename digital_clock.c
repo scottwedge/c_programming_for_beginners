@@ -18,6 +18,15 @@ int get_minutes()
     return m;
 }
 
+int get_seconds()
+{
+    int s;
+    printf("Enter seconds value:");  // Prompt for time in seconds
+    scanf("%d", &s);           // Read value
+    return s;
+}
+
+
 
 int main()
 {
@@ -29,9 +38,7 @@ int main()
 
     minutes = get_minutes();
 
-    printf("Enter seconds value:");  // Prompt for time in seconds
-    scanf("%d", &seconds);           // Read value
-
+    seconds = get_seconds();
 
     while (1)      // Update time forever
     {
