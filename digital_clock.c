@@ -45,6 +45,7 @@ int main()
         system("clear");
         printf("Clock:\n");
         printf("days:%02d  %02d:%02d:%02d\n", days, hours, minutes, seconds);
+        printf("-----------------\n");
         sleep(1);
         seconds++;           // increment seconds counters
         if (seconds >= 60)
