@@ -42,7 +42,7 @@ int main()
 
     while (1)      // Update time forever
     {
-        system("clear");
+        system("clear");   // clear screen
         printf("Clock:\n");
         printf("days:%02d  %02d:%02d:%02d\n", days, hours, minutes, seconds);
         printf("-----------------\n");
